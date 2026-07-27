@@ -5,47 +5,117 @@
   <title>Out Of System Digital, LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Out Of System Digital, LLC creates digital tools for volleyball coaches, players, and parents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #faf9f7;
+      --ink: #16181c;
+      --muted: #5b6068;
+      --line: #dfdcd5;
+      --accent: #1f3a5f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #f9fafc;
-      color: #1f2937;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       text-align: center;
+      padding: 2rem 1.5rem;
     }
+
+    main {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
-      width: 180px;
+      width: 96px;
       height: auto;
-      margin-bottom: 1rem;
+      margin-bottom: 1.75rem;
     }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.85rem;
+    }
+
     h1 {
       font-size: 2rem;
-      margin: 0.5rem 0;
-      color: #1e3a8a;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 0 1.1rem;
+      color: var(--ink);
     }
+
     p {
-      max-width: 600px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin: 0.5rem auto;
-      color: #374151;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      margin: 0;
+      color: var(--muted);
+      font-weight: 400;
     }
+
+    .rule {
+      width: 32px;
+      height: 3px;
+      background: var(--accent);
+      border: none;
+      margin: 1.75rem 0;
+      border-radius: 2px;
+    }
+
     footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #6b7280;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      width: 100%;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="logo.jpeg" alt="Out Of System Digital logo">
-  <h1>Out Of System Digital, LLC</h1>
-  <p>We make digital tools for volleyball coaches, players, and parents — helping the volleyball community stay connected, organized, and inspired.</p>
-  <footer>&copy; 2026 Out Of System Digital, LLC</footer>
+  <main>
+    <img src="logo.jpeg" alt="Out Of System Digital logo">
+    <p class="eyebrow">Volleyball software</p>
+    <h1>Out Of System Digital, LLC</h1>
+    <hr class="rule">
+    <p>We build digital tools that help volleyball coaches, players, and parents stay connected, organized, and inspired.</p>
+    <footer>&copy; 2026 Out Of System Digital, LLC</footer>
+  </main>
 </body>
 </html>
