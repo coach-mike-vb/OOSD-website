@@ -8,104 +8,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --ink: #16181c;
-      --muted: #5b6068;
-      --line: #dfdcd5;
-      --accent: #1f3a5f;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, -apple-system, sans-serif;
-      background-color: var(--bg);
-      color: var(--ink);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem 1.5rem;
-    }
-
-    main {
-      max-width: 560px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    img {
-      width: 180px;
-      height: auto;
-      margin-bottom: 1.75rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin: 0 0 1.1rem;
-      color: var(--ink);
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.65;
-      margin: 0;
-      color: var(--muted);
-      font-weight: 400;
-    }
-
-    .rule {
-      width: 32px;
-      height: 3px;
-      background: var(--accent);
-      border: none;
-      margin: 1.75rem 0;
-      border-radius: 2px;
-    }
-
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--line);
-      width: 100%;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    a:focus-visible,
-    button:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.6rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <img src="logo.jpeg" alt="Out Of System Digital logo">
-    <h1>Out Of System Digital, LLC</h1>
-    <hr class="rule">
-    <p>We build digital tools that help volleyball coaches, players, and parents stay connected, organized, and inspired.</p>
-    <footer>&copy; 2026 Out Of System Digital, LLC</footer>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="logo.jpeg" alt="">Out Of System Digital</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page">
+    <div style="text-align:center">
+      <img src="logo.jpeg" alt="Out Of System Digital logo" width="180" style="max-width:180px;height:auto;margin:1rem 0 1.25rem">
+      <h1>Out Of System Digital, LLC</h1>
+      <p class="lede">We build digital tools that help volleyball coaches, players, and parents stay connected, organized, and inspired.</p>
+    </div>
+    <hr class="rule" style="margin-left:auto;margin-right:auto">
+
+    <h2>Our first app: Volleyball Rotations</h2>
+    <p>A visual coaching and learning tool. See every rotation clearly, build custom lineups, add arrows, and understand overlap rules at a glance. Coming soon to the App Store, and currently free to use.</p>
+    <p><a href="products.html">Learn more about Volleyball Rotations &rarr;</a></p>
+
+    <h2>About us</h2>
+    <p>We are a small team making practical software for the volleyball community. <a href="about.html">More about Out Of System Digital</a>.</p>
   </main>
+  <footer class="site-footer">
+    <span>&copy; 2026 Out Of System Digital, LLC</span>
+    <span><a href="privacy.html">Privacy Policy</a> &middot; <a href="support.html">Support</a> &middot; <a href="contact.html">Contact</a></span>
+  </footer>
 </body>
 </html>
